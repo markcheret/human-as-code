@@ -4,7 +4,7 @@ This is the human-as-code manifest repository.
 
 ## Mission
 
-The goal is to create a manual of sustainable operation of a human being so that humanity is collaboratively empowered to thrive and reach its full potential.
+The goal is to create a manual of sustainable operation of a human being so that humans collaboratively empower each other to thrive and reach their full potential.
 
 ## Process
 
