@@ -13,6 +13,6 @@ In order to achieve this mission a group of humans is currently going through an
 ### Identified steps
 
     - Set up a reference human model manifest:
-        - Work in progress with an instance of kind: human to be found in Mark-Cheret.yaml
+        - Work in progress with an instance of kind: human to be found in [Mark-Cheret.yaml](https://github.com/markcheret/human-as-code/blob/main/Mark-Cheret.yaml)
     - Define human-environment interfaces
     - Establish human-environment interaction-maps and policies
