@@ -1,0 +1,97 @@
+# This is a non-conforming and ever-changing manfiest
+# answering the question how to operate a human being in a sustainable way.
+# The following describes the class-instantiation of a human being with the key:value syntax in declarative form
+
+apiVersion: humanity/v1
+kind: 'human'
+metadata:
+    name: 'Mark'
+    labels:
+        environment: 'production'
+        location: 'earth, milky_way, virgo_cluster'
+spec:
+    affiliation:
+        clan:
+            name: 'Cheret'
+    communication:
+        channels:
+            face-to-face:
+                personal_business:
+                    enforced_policy: 'accept on commit'
+            face-to-face-by-proxy:
+                personal_business:
+                    enforced_policy: 'tolerated'
+            video-chat: true
+            phone-call: true
+            messenger: true
+            group-chat: true
+            email: true
+        criticality:
+            urgent-important:
+                face-to-face: true
+                phone:
+                    push: true
+                    pull: true
+                    escalate_on_non_ack:
+                        face-to-face
+                        face-to-face-by-proxy
+                messenger:
+                    escalate_on_non_ack:
+                        phone: true
+            urgent-non-important:
+                messenger
+            important-non-urgent:
+                group-chat:
+                    mention: true
+                    group-public: true
+                    within-message-thread: true
+            non-important-non-urgent:
+                email
+            planned:
+                punctual: true
+                prepared: true
+    co-create:
+        respect_availability: true
+        establish:
+            service_level_indicators:
+                shorthand: SLI
+                #  a metric and its target values (range) over a period of time
+            service_level_objective:
+                shorthand: SLO
+                # all SLIs representing the SLA objective
+            service_level_agreement:
+                shorthand: SLA
+                #  legal (volantary, free will, binding, regularly revised) agreement about SLO (e.g., how it is measured, notifications, service credits, etc.)
+        shared_repository:
+            cloud_share:
+                identity_access_management: true
+                multi_factor_authenticated: true
+                commits:
+                    timestamped: true
+                    identified: true
+                    signed: true
+                progress_work:
+                    create branch: true
+                    open_pull_request: true
+        graduate:
+            stages:
+                idea:
+                    chat: tue
+                concept:
+                    shared_repository: true
+                proof_of_concept:
+                    shared_repository: true
+                    budget: true
+                project:
+                    statement_of_work: true
+                legal_entity:
+                    equal_shares: true
+                    equal_credits: true
+    mythic:
+        category:
+            shaman:
+                name: 'Yachak Baqshi'
+                healer: true
+            hero:
+                name: 'Aragorn King Elessar of Gondor Son of Isildur'
+                link: 'https://en.wikipedia.org/wiki/Aragorn#The_War_of_the_Ring'
