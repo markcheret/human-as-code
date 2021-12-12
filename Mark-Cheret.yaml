@@ -9,7 +9,20 @@ metadata:
     name: 'Mark'
     labels:
         environment: 'production'
-        location: 'earth, milky_way, virgo_cluster'
+        location:
+            planet:
+                name: 'earth'
+                link: 'https://en.wikipedia.org/wiki/Earth'
+            galaxy:
+                name: 'milky_way'
+                type:
+                    name: 'barred spiral galaxy'
+                    link: 'https://en.wikipedia.org/wiki/Barred_spiral_galaxy'
+            cluster:
+                name: 'virgo_cluster'
+                parent_structure:
+                    name: 'Virgo Supercluster'
+                    link: 'https://en.wikipedia.org/wiki/Virgo_Supercluster'
 spec:
     affiliation:
         clan:
