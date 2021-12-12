@@ -15,5 +15,7 @@ In order to achieve this mission a group of humans is currently going through an
     - Set up a reference human model manifest:
     - Define human-environment interfaces
     - Establish human-environment interaction-maps and policies
+    - Create instructions on how to self-assess required parameters for interaction
+    - Create software libarary generating a human-readable format for individual instances of kind: human
 
 Work in progress for a reference human model manifest with an instance of kind: human to be found in [Mark-Cheret.yaml](Mark-Cheret.yaml)
