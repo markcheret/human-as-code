@@ -1,6 +1,7 @@
-# This is a non-conforming and ever-changing manfiest
-# answering the question how to operate a human being in a sustainable way.
-# The following describes the class-instantiation of a human being with the key:value syntax in declarative form
+# This is a manfiest written in YAML
+# answering the questions:
+# how to operate a human being in a sustainable way leveraging the human-environment interfaces
+# The following describes the class-instantiation of a human being in declarative form
 
 apiVersion: humanity/v1
 kind: 'human'
@@ -13,7 +14,7 @@ spec:
     affiliation:
         clan:
             name: 'Cheret'
-    communication:
+    interface:
         channels:
             face-to-face:
                 personal_business:
@@ -26,27 +27,37 @@ spec:
             messenger: true
             group-chat: true
             email: true
-        criticality:
-            urgent-important:
-                face-to-face: true
-                phone:
-                    push: true
-                    pull: true
-                    escalate_on_non_ack:
-                        face-to-face
-                        face-to-face-by-proxy
-                messenger:
-                    escalate_on_non_ack:
-                        phone: true
-            urgent-non-important:
-                messenger
-            important-non-urgent:
-                group-chat:
-                    mention: true
-                    group-public: true
-                    within-message-thread: true
-            non-important-non-urgent:
-                email
+        severity:
+            blocking:
+                urgent-important:
+                    face-to-face: true
+                    phone:
+                        push: true
+                        pull: true
+                        escalate_on_non_acknowledgment:
+                            face-to-face
+                            face-to-face-by-proxy
+                    messenger:
+                        escalate_on_non_acknowledgment:
+                            phone: true
+                urgent-non-important:
+                    messenger: true
+                    group-chat:
+                        mention: true
+                        new-message: true
+                        group-public: true
+                        reply-in-message-thread: false
+            non-blocking:
+                important-non-urgent:
+                    group-chat:
+                        mention: true
+                        new-message: true
+                        group-public: true
+                        reply-in-message-thread: true
+                non-important-non-urgent:
+                    email
+            for-your-infornamtion:
+                set-flag: 'FYI'
             planned:
                 punctual: true
                 prepared: true
